@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+  </body>
+</html>
+<script>
+  /**var arr = [1, 2, 2, 2, 2, 5, 3, 5, 7, 3, 6, 7];
+
+  /**
+   * @description {}
+   * case 1 - replace all duplicate items with single occurence
+   * case 2 - Tell me the frequency of duplicate items
+   */
+  /**var arr = [1, 2, 2, 2, 2, 5, 3, 5, 7, 3, 6, 7];
+
+  /**
+   * @description {You need to build the functionality with & without inbuild methods}
+   * case 1 - replace all duplicate items with single occurence
+   * case 2 - Tell me the frequency of duplicate items
+   */
+  /*var cars = ["Saab", "Volvo", "BMW"];
+  if (cars[1]) {
+    cars[cars.length] = cars[1];
+  }
+  cars[1] = "Audi";
+  document.getElementById("demo").innerHTML = cars;
+  */
+  var arr = [1, 2, 2, 2, 2, 5, 3, 5, 7, 3, 6, 7];
+  var unique = [...new Set(arr)];
+  console.log(unique);
+  document.getElementById("demo").innerHTML = unique;
+
+  let obj = {};
+  for (var i = 0; i < arr.length; i++) {
+    obj[arr[i]] = obj[arr[i]] != null ? obj[arr[i]] + 1 : 1; //stores duplicate in an obj
+  }
+  console.log(obj);
+</script>
